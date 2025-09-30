@@ -16,7 +16,6 @@ public class AccountController {
     @Autowired
     private AccountMapper accountMapper;
 
-
     @PostMapping
     public ResponseEntity<?> saveAccount(@RequestBody AccountDto dto){
         Account account = accountMapper.toAccount(dto);
