@@ -42,7 +42,7 @@ public class LoanController {
     }
 
     // Get loan by customerId
-    @GetMapping("/customer/{customerId}")
+    @GetMapping("/{customerId}")
     public ResponseEntity<?> getLoanByCustomerId(@PathVariable Long customerId){
         List<Loan> loans = loanService.findByCustomerId(customerId);
         return ResponseEntity.ok(loans);

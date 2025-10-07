@@ -11,7 +11,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountNumber;
     @ManyToOne
-    @JoinColumn(name = "customerId")
+    @JoinColumn(name = "customerId",nullable = false)
     private Customer customer;
     private String accountType;
     private String branchAddress;

@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class CardServiceImpl implements CardService {
+
     private final CardRepository cardRepository;
 
     @Override
@@ -23,5 +24,6 @@ public class CardServiceImpl implements CardService {
     @Override
     public List<Card> getByCustomerId(Long customerId) {
             return cardRepository.findByCustomerId(customerId);
+
     }
 }
