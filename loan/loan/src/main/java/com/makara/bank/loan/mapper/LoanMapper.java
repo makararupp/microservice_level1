@@ -7,7 +7,6 @@ import com.makara.bank.loan.entity.Loan;
 
 @Component
 public class LoanMapper {
-
     public Loan toLoan(LoanDTO dto){
         Loan loan = new Loan();
         loan.setAmountPaid(dto.getAmountPaid());
