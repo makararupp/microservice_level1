@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class LoanDTO {
-     private Long loanNumber;
+    private Long loanNumber;
     private Long customerId;
     private LocalDate startDate;
     private String loanType;
